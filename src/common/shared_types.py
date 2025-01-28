@@ -1,0 +1,9 @@
+UserId = str
+UseCase = str
+FeatureValue = int | float
+FeatureName = str
+FeatureVector = dict[FeatureName, FeatureValue]
+FeatureSet = dict[UserId, FeatureVector]
+FeatureSets = dict[UseCase, FeatureSet]
+Target = int | float
+Targets = dict[UseCase, dict[UserId, Target]]
